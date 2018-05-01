@@ -13,7 +13,7 @@ down:
 	docker stop spring-ob
 
 status:
-	docker ps -a
+	docker ps 
 
 cleanup:
 	docker rm $$(docker ps -a -q)
