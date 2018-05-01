@@ -2,7 +2,7 @@
 
 Objective: https://github.com/orderbird/ob-teamday
 
-My Learnings:
+## My Learnings:
 
 This was a quite interesting task for me to deal with Spring Boot for first time and I enjoyed finding and fixing the error :)
 
@@ -15,22 +15,22 @@ This was a quite interesting task for me to deal with Spring Boot for first time
 4. I said "Hello" to the "Spring".
 
 
-Solution:
+## Solution:
 
 1. Dockerfile - contains the build step of the container.
 
 2. Makefile - abstract the steps to run the application inside a container.
 
-3. 
+3. java/spring-boot-project/src/main/java/com/orderbird/teamday/HelloSpringController.java - This file contained an error and was fixed by importing RestController and RequestMapping package. And by adding RequestMapping for 'http://localhost:8080/' 
 
-Build Steps:
+## Build Steps:
 
-1. Clone the Repository
+1. Clone the Repository ->
 
 ```
 git clone https://github.com/hitheshsreedhara/orderbird.git
 ```
-2. Build the Spring-Boot App using Makefile
+2. Build the Spring-Boot App using Makefile ->
 
 ```
 make build
@@ -69,7 +69,7 @@ Successfully built 728ece0d8158
 Successfully tagged spring-ob:latest
 ```
 
-3. Run the App using make
+3. Run the App using make ->
 ```
 make up
 ```
@@ -89,9 +89,9 @@ For more details see https://docs.gradle.org/4.7/release-notes.html
 Starting a Gradle Daemon (subsequent builds will be faster)
 ```
 
-4. Browse for localhost:8080 to say Hello to the Spring through the container spring-ob
+4. Browse for [http://localhost:8080](http://localhost:8080) to say Hello to the Spring through the container "spring-ob" ->
 
-5. Check status of the container
+5. Check status of the container ->
 ```
 make status
 ```
@@ -100,7 +100,7 @@ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
 012b875e48c9        spring-ob           "gradle --stacktrace…"   27 seconds ago      Up 28 seconds       0.0.0.0:8080->8080/tcp   spring-ob
 ```
-6. Stop the Application
+6. Stop the Application ->
 ```
 make down
 ```
