@@ -2,7 +2,7 @@ FROM gradle:4.7-jdk-alpine
 
 WORKDIR /opt/orderbird
 
-ADD . /opt/orderbird
+ADD ./java/spring-boot-project/ /opt/orderbird
 
 USER root
 
