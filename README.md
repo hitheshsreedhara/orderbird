@@ -10,7 +10,7 @@ This was a quite interesting task for me to deal with Spring Boot for first time
 
 2. Then I managed to download all the dependent tools and built a sample Hello SpringBoot application.
 
-3. Ran the application using Gradle.
+3. Built the application using Gradle.
 
 4. I said "Hello" to the "Spring".
 
@@ -22,3 +22,13 @@ Solution:
 2. Dockerfile - contains the build step of the container.
 
 3. Makefile - abstract the steps to run the application inside a container.
+
+4. 
+
+Build Steps:
+
+1. Build the SpringBoot App
+
+```
+
+```
